@@ -71,7 +71,9 @@ function SalesCard() {
                             return (
                                 <tr key={sale.id}>
                                     <td className="show992">{sale.id}</td>
-                                    <td className="show576">{new Date(sale.date).toLocaleDateString()}</td>
+                                    <td className="show576">{sale.date}</td>
+                                    {/* Essa linha de comando esta dando erro ai eu não consigo formatar a data!
+                                    <td className="show576">{new Date(sale.date).toLocaleDateString()}</td>*/}
                                     <td>{sale.sellerName}</td>
                                     <td className="show992">{sale.visited}</td>
                                     <td className="show992">{sale.deals}</td>
